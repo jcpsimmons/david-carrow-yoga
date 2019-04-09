@@ -2,3 +2,13 @@
     background: url('../img/hero-placeholder.jpg')center center;
     background-size:cover;
 }
+
+.columns.is-vcentered {
+    -webkit-box-align: center;
+       -ms-flex-align: center;
+          align-items: center;
+  }
+
+.rounded-img {
+    border-radius: 10px;
+}
