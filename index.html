@@ -11,12 +11,8 @@
     <title></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="semantic/dist/semantic.min.css"
-    />
+
+    <link rel="stylesheet" href="css/custom.css" />
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -25,49 +21,71 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
-    <div
-      class="ui inverted vertical masthead center aligned segment"
-      style="background-image: url(img/hero-placeholder.jpg); background-repeat: no-repeat;
-      background-size: cover; min-height: 100vh; background-position: 20% 25%"
-    >
-      <div class="ui container">
-        <div class="ui large secondary inverted pointing menu">
-          <a class="toc item">
-            <i class="sidebar icon"></i>
-          </a>
-          <a class="active item">Home</a>
-          <a class="item">Work</a>
-          <a class="item">Company</a>
-          <a class="item">Careers</a>
-          <div class="right item">
-            <a class="ui inverted button">Log in</a>
-            <a class="ui inverted button">Sign Up</a>
+    <section id="hero-section">
+      <div class="hero-image">
+        <div class="container hero-container">
+          <h1 class="display1">
+            David Carrow
+          </h1>
+          <h2 class="display2">Yoga Instructor</h2>
+          <div class="row">
+            <a href="#about-david"
+              ><div class="flat-button">
+                <p class="button-text">learn more</p>
+              </div></a
+            >
+            <a href="#contact-form"
+              ><div class="flat-button">
+                <p class="button-text">book now</p>
+              </div></a
+            >
           </div>
         </div>
       </div>
-
-      <div class="ui text container">
-        <h1 class="ui inverted header">
-          Imagine-a-Company
-        </h1>
-        <h2>Do whatever you want when you want to.</h2>
-        <div class="ui huge primary button">
-          Get Started <i class="right arrow icon"></i>
+    </section>
+    <section id="about-david">
+      <div class="container about-david-section">
+        <div class="row" style="padding: 30px 5vw 0 5vw;">
+          <div class="column" style="width: 30vw">
+            <h1>About David</h1>
+            <p>
+              Lorem ipsum dolor amet narwhal craft beer shabby chic, disrupt
+              leggings distillery poke hella mlkshk four dollar toast hammock +1
+              knausgaard put a bird on it. Four dollar toast snackwave
+              succulents forage meggings. Locavore gochujang readymade XOXO
+              slow-carb wayfarers. +1 forage everyday carry slow-carb taxidermy
+              keytar, williamsburg activated charcoal YOLO. Drinking vinegar
+              semiotics yuccie butcher migas. Biodiesel af ramps seitan
+              taxidermy. Slow-carb listicle PBR&B, yr crucifix knausgaard XOXO
+            </p>
+          </div>
+          <div class="column image-slider">
+            <img class="" src="img/carousel1.jpg" alt="" />
+          </div>
         </div>
       </div>
-    </div>
-
-    <!-- <div class="ui grid">
-      <div
-        class="ui grid"
-        style="z-index: 1; position: absolute; padding: 20px 0 0 20px"
-      >
-        <h1>hello</h1>
+    </section>
+    <section
+      class="class-info"
+      style="height:600px; background-color: blue"
+    ></section>
+    <section id="contact-form" style="background-color: orange">
+      <div class="container">
+        <div class="row">
+          <form action="">
+            <input type="text" />
+            <select>
+              <option value="yoga">Yoga</option>
+              <option value="sound-bath">Sound Bath</option>
+              <option value="other">Other</option>
+            </select>
+            <textarea name="message" rows="10" cols="50"></textarea>
+            <input type="submit" />
+          </form>
+        </div>
       </div>
-      <div class="sixteen wide column">
-        <img class="ui fluid image" src="img/hero-placeholder.jpg" />
-      </div>
-    </div> -->
+    </section>
+    <footer style="height: 300px; background-color:black"></footer>
 
     <script
       src="https://code.jquery.com/jquery-3.1.1.min.js"

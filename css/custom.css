@@ -1,0 +1,117 @@
+/* Bring in typeface */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700");
+
+/* Fix any padding issues */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+div.hero-container {
+  padding-left: 20px;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h1.display1 {
+  font-size: 10em;
+  color: orange;
+  font-weight: 700;
+  margin-bottom: -100px;
+}
+
+h2.display2 {
+  font-size: 7em;
+  font-style: italic;
+  font-weight: 400;
+  color: orange;
+  margin-bottom: 20px;
+}
+
+p.button-text {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  h1.display1 {
+    font-size: 5em;
+    margin-bottom: -20px;
+  }
+  h2.display2 {
+    font-size: 3em;
+  }
+}
+
+/* Images */
+.hero-image {
+  display: flex;
+  background-image: url(../img/hero-placeholder.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: 20% 0%;
+}
+
+.image-slider {
+  display: flex;
+  background-image: url(../img/carousel1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% 0%;
+  min-height: 100%;
+  margin-left: 100px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+}
+
+/* buttons */
+div.flat-button {
+  display: inline-block;
+  height: 50px;
+  text-align: center;
+  border: 3px solid orange;
+  border-radius: 10px;
+}
+
+div.flat-button:hover {
+  display: inline-block;
+  height: 50px;
+  text-align: center;
+  background-color: orange;
+  border-radius: 10px;
+}
+
+/* section wide spacing */
+about-david-section {
+  display: flex;
+  background-color: red;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  margin: 50px 0 50px 0;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
